@@ -31,6 +31,8 @@ function Register () {
                     <Text>Gender</Text>
                     <TextInput style={styles.input} />
                 </View>
+                <Button title="Cancel" onPress={() => navigation.goBack()} />
+                <Button title="Login" onPress={() => navigation.navigate('Home')}/>
             </View>
         </View>
     )
