@@ -26,7 +26,10 @@ function HomeDrawerNav () {
 
 function HomeTabNav () {
   return(
-    <Tab.Navigator>
+    <Tab.Navigator
+        screenOptions={{
+          headerShown:false,
+        }}>
       <Tab.Screen name="Home" component={HomeDrawerNav} />
       <Tab.Screen name="Account" component={Account} />
     </Tab.Navigator>
@@ -36,7 +39,10 @@ function HomeTabNav () {
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+          screenOptions={{
+          headerShown:false,
+        }}>>
         <Stack.Screen name='Login' component={Login} />
         <Stack.Screen name='Register' component={Register} />
         <Stack.Screen name='Forgot' component={Forgot} />
